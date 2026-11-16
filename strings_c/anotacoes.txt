@@ -1,0 +1,8 @@
+scanf é limitado, pois só consegue pegar uma string até ter um espaço
+
+para resolver essa limitação existe a função fgets(variável, tamanho, stdin)
+fgets é tão fiel que imprimi até o enter, para isso não acontecer é utilizado variavel+[strcspn(variavel, \n)] = '\0'
+fgets deixa o buffer mais limpo, mais fácil de lidar
+fgets(nome_variavel, tamanho_variavel, stdin)
+
+strcspn()
