@@ -13,7 +13,7 @@ int main ()
     for(int i = 0; i < 3; i ++){
         printf("Digite o nome do aluno %d\nR:", i + 1);
         fgets(aluno[i].nome, 40, stdin);
-        aluno[i].nome[strcspn(aluno[i].nome, "\n")] = '\0';;
+        aluno[i].nome[strcspn(aluno[i].nome, "\n")] = '\0';
 
         printf("Digite a nota do aluno %d\nR:", i + 1);
         scanf("%f", &aluno[i].nota);
